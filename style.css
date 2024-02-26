@@ -242,7 +242,78 @@ header .header {
   font-size: 3rem;
 }
 /* <!-- my recent work --> */
+.projects {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+.projects .project-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+}
+
+.project-card .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  letter-spacing: 1rem;
+}
 /* <!-- about me  --> */
+
+/* .about-me {
+  background: greenyellow;
+}
+
+.about-me .left span {
+  font-weight: bolder;
+} */
+
+.about {
+  background: rgba(153, 205, 50, 0.751);
+  padding: 7rem 0;
+}
+
+.about .about-content {
+}
+
+.about .myImg img {
+  width: 50%;
+  height: 80vh;
+
+  /* justify-content: center; */
+}
+
+.about .my-bio h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 5px;
+}
+
+.about .my-bio p:nth-child(4) {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about .my-bio .tag {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about .my-bio .tag + div > span {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+}
+
+.about .my-bio .tag + div > span:hover {
+  cursor: pointer;
+  background: grey;
+  transition: all 0.3s;
+}
+
 /* <!-- contact--> */
 /* <!-- footer  --> */
 footer {
