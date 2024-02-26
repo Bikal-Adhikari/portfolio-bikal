@@ -315,6 +315,70 @@ header .header {
 }
 
 /* <!-- contact--> */
+
+/* .contact .contact-content {
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.contact .contact-content .icons {
+  font-size: 3rem;
+}
+
+.contact .contact-content .email {
+  background: #000;
+  border-radius: 20px;
+  color: #fff;
+  align-items: center;
+}
+.contact .contact-content p {
+  justify-content: center;
+}
+.contact .contact-content .email i {
+  background-color: red;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  align-items: center;
+} */
+
+.contact {
+  padding: 7rem 0;
+  width: 400px;
+  margin: auto;
+}
+
+.contact .social {
+  justify-content: space-between;
+  font-size: 4rem;
+}
+
+.contact h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact .email-section {
+  background: black;
+  padding: 1rem;
+  color: white;
+  border-radius: 50px;
+  font-size: 1.3rem;
+}
+
+.contact .email-section .email {
+  align-items: center;
+}
+
+.contact .email-section .send {
+  background: var(--color-orange);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
 /* <!-- footer  --> */
 footer {
   background: #000;
