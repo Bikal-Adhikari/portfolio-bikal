@@ -1,5 +1,5 @@
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -77,6 +77,7 @@ a {
   background: var(--body-bg);
   min-height: 100vh;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 /* <!-- navbar  --> */
 
@@ -253,7 +254,7 @@ header .header {
 
 .project-card {
   box-shadow: var(--shadow);
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .project-card .links {
@@ -360,10 +361,11 @@ header .header {
 
 .contact .email-section {
   background: black;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: white;
   border-radius: 50px;
   font-size: 1.3rem;
+  box-shadow: var(--shadow);
 }
 
 .contact .email-section .email {
@@ -384,4 +386,117 @@ footer {
   background: #000;
   color: white;
   padding: 3rem;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.footer .top {
+  justify-content: space-around;
+}
+
+.goup {
+  font-size: 3rem;
+
+  width: 70px;
+  height: 70px;
+  background: var(--color-orange);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  padding-top: 7rem;
+}
+
+/* hamburgerMenu  */
+
+[for="hamburgerMenu"],
+#hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+/* media query for mobile devices  */
+@media (max-width: 760px) {
+  .hero {
+    grid-template-areas:
+      "right"
+      "left";
+  }
+  .right {
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    padding-top: 7rem;
+    align-items: center;
+    margin-left: 0;
+  }
+  .right img {
+    width: 250px;
+  }
+
+  .banner {
+    flex-direction: column;
+    margin-top: 500px;
+
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+
+  .info-divider {
+    display: none;
+  }
+
+  .projects .project-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .about .myImg {
+    width: 60%;
+  } */
+
+  /* Menu  */
+  .menu {
+    /* display: none; */
+    position: absolute;
+    width: 250px;
+    top: 3.7rem;
+    left: 100vw;
+
+    background: var(--body-bg);
+    height: 100vh;
+    box-shadow: var(--shadow);
+    transition: left 0.5s;
+  }
+
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  [for="hamburgerMenu"] {
+    display: block;
+  }
+
+  #hamburgerMenu:checked + .menu {
+    left: calc(100vw - 250px);
+  }
 }

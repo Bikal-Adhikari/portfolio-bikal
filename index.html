@@ -39,9 +39,11 @@
             <div class="joti-one-regular">Bikal</div>
             <div class="line">Soft. Engineer</div>
           </div>
+          <label for="hamburgerMenu"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="hamburgerMenu" />
           <div class="menu">
             <ul class="flex navigation">
-              <li><a href="#home">Home</a></li>
+              <li><a href="#header">Home</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#about">About</a></li>
@@ -52,7 +54,7 @@
       </header>
 
       <!-- hero  -->
-      <section class="hero-section container">
+      <section class="hero-section container" id="header">
         <div class="grid hero">
           <div class="left flex">
             <div>Hi I'm <span>Bikal Adhikari</span></div>
@@ -88,6 +90,7 @@
           <div class="flex icon-container">
             <i class="fa-solid fa-award"></i>
           </div>
+          <div class="info-divider"></div>
           <div>
             <span>5+ Projects</span>
             <p>Completed</p>
@@ -97,6 +100,7 @@
           <div class="flex icon-container">
             <i class="fa-solid fa-award"></i>
           </div>
+          <div class="info-divider"></div>
           <div>
             <span>1+ year</span>
             <p>Coding Experience</p>
@@ -105,7 +109,7 @@
       </section>
 
       <!-- skills -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="title"><span>Skills</span></h2>
 
         <div class="container flex skills-container">
@@ -136,7 +140,7 @@
       </section>
 
       <!-- my recent work -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="title"><span>My Projects</span></h2>
 
         <div class="grid project-container container">
@@ -211,7 +215,7 @@
         </div>
       </section>
       <!-- about me  -->
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="title"><span>About Me</span></h2>
         <div class="flex container about-content">
           <div class="flex myImg">
@@ -313,7 +317,7 @@
         </div>
       </section> -->
 
-      <section class="container contact">
+      <section class="container contact" id="contact">
         <h2 class="title"><span>Contact</span></h2>
         <div class="flex social">
           <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -322,8 +326,8 @@
           <a href="tel:0451677236"><i class="fa-solid fa-mobile"></i></a>
         </div>
         <h3>OR</h3>
-        <div class="email-section flex">
-          <a href="">
+        <div class="flex">
+          <a href="mailto:real@email.com" class="email-section">
             <div class="email flex">
               <span>yourEmail@gmail.com</span>
               <div class="flex send">
@@ -335,9 +339,35 @@
       </section>
       <!-- footer  -->
 
-      <footer>
-        <div class="container">heheheh</div>
+      <footer class="flex footer">
+        <div class="flex top container">
+          <div class="links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="socials">
+            <h3>Social Links</h3>
+            <ul>
+              <li><a href="" target="_blank">LinkedIN</a></li>
+              <li><a href="" target="_blank">Github</a></li>
+              <li><a href="" target="_blank">Facebook</a></li>
+              <li><a href="" target="_blank">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          &copy; All right reserved. Made by Bikal Adhikari.
+        </div>
       </footer>
+
+      <a href="#header" class="flex goup"
+        ><i class="fa-solid fa-angle-up"></i
+      ></a>
     </div>
   </body>
 </html>
